@@ -170,11 +170,11 @@ export default function App() {
           <div className="p-6 md:p-12 space-y-8 animate-in fade-in duration-700">
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="bg-white p-2 rounded-full shadow-sm">
-                <img 
-                  src="https://4.bp.blogspot.com/-NR-PTG-73fk/VP38zK3Fo2I/AAAAAAAACEQ/i0weJ6M6tps/s1600/logo-upi.jpg" 
-                  alt="Logo UPI" 
-                  className="w-24 h-24 object-contain mx-auto"
-                />
+                <div className="bg-blue-50 p-4 rounded-full">
+                <School className="w-12 h-12 text-blue-700" />
+</div>
+                  
+                
               </div>
               <div>
                 <h3 className="text-sm font-black text-blue-800 uppercase tracking-[0.2em]">Universitas Pendidikan Indonesia</h3>

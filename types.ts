@@ -30,7 +30,6 @@ export interface Question {
   dimension?: string;
 }
 
-// Tambahkan ini agar constants.ts tidak error
 export interface ScenarioQuestion extends Question {
   title: string;
   options: { id: string; text: string }[];
@@ -42,5 +41,5 @@ export interface SurveyState {
   jobCraftingAnswers: Record<string, LikertValue>;
   aiImplementationAnswers: Record<string, LikertValue>;
   aiLiteracyAnswers: Record<string, LikertValue>;
-  performanceAnswers: Record<string, { choice: 'A' | 'B' | 'C' | 'D'; confidence: number }>;
+  performanceAnswers: Record<string, any>; // Menggunakan any sementara agar tidak bentrok
 }
