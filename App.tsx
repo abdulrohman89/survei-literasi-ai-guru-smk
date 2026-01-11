@@ -31,7 +31,7 @@ import {
   BrainCircuit,
   Settings,
   ShieldCheck,
-  Target,
+  Target, 
   Loader2,
   AlertCircle
 } from 'lucide-react';
