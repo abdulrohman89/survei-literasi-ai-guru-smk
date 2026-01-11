@@ -30,15 +30,11 @@ export interface Question {
   dimension?: string;
 }
 
-export interface ScenarioQuestion {
-  id: string;
+// Tambahkan ini agar constants.ts tidak error
+export interface ScenarioQuestion extends Question {
   title: string;
-  text: string;
-  options: {
-    id: 'A' | 'B' | 'C' | 'D';
-    text: string;
-  }[];
-  correctAnswer: 'A' | 'B' | 'C' | 'D';
+  options: { id: string; text: string }[];
+  correctAnswer: string;
 }
 
 export interface SurveyState {
