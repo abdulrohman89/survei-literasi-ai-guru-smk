@@ -1,3 +1,16 @@
+export enum Step {
+  Welcome = 'WELCOME',
+  RespondentInfo = 'RESPONDENT_INFO',
+  JobCraftingIntro = 'JOB_CRAFTING_INTRO',
+  JobCrafting = 'JOB_CRAFTING',
+  AiImplementationIntro = 'AI_IMPLEMENTATION_INTRO',
+  AiImplementation = 'AI_IMPLEMENTATION',
+  AiLiteracyIntro = 'AI_LITERACY_INTRO',
+  AiLiteracy = 'AI_LITERACY',
+  PerformanceBasedIntro = 'PERFORMANCE_BASED_INTRO',
+  PerformanceBased = 'PERFORMANCE_BASED',
+  Summary = 'SUMMARY'
+}
 
 export type LikertValue = 1 | 2 | 3 | 4 | 5;
 
@@ -14,7 +27,7 @@ export interface RespondentData {
 export interface Question {
   id: string;
   text: string;
-  dimension: string;
+  dimension?: string;
 }
 
 export interface ScenarioQuestion {
@@ -34,18 +47,4 @@ export interface SurveyState {
   aiImplementationAnswers: Record<string, LikertValue>;
   aiLiteracyAnswers: Record<string, LikertValue>;
   performanceAnswers: Record<string, { choice: 'A' | 'B' | 'C' | 'D'; confidence: number }>;
-}
-
-export enum Step {
-  Welcome,
-  RespondentInfo,
-  JobCraftingIntro,
-  JobCrafting,
-  AiImplementationIntro,
-  AiImplementation,
-  AiLiteracyIntro,
-  AiLiteracy,
-  PerformanceBasedIntro,
-  PerformanceBased,
-  Summary
 }
