@@ -171,9 +171,9 @@ export default function App() {
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="bg-white p-2 rounded-full shadow-sm">
                 <img 
-                  src="https://4.bp.blogspot.com/-NR-PTG-73fk/VP38zK3Fo2I/AAAAAAAACEQ/i0weJ6M6tps/s1600/logo-upi.jpg" 
+                  src="https://tse2.mm.bing.net/th/id/OIP.gQRHGL0Mov56alQpz4YPgwAAAA?pid=Api&P=0&h=180" 
                   alt="Logo UPI" 
-                  className="w-24 h-24 object-contain mx-auto"
+                  className="w-29 h-29 object-contain mx-auto"
                 />
               </div>
               <div>
