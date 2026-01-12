@@ -1,5 +1,18 @@
 {
-  "name": "Survei Peran AI Guru SMK Jabar",
-  "description": "A comprehensive research survey app for Vocational School teachers in West Java, exploring the mediation of Job Crafting in the relationship between AI Literacy and AI Learning Implementation.",
+  "name": "Kuesioner Literasi AI UPI",
+  "description": "Aplikasi kuesioner penelitian untuk Guru SMK di Jawa Barat mengenai Literasi AI dan Job Crafting.",
+  "version": "1.0.0",
+  "author": "Abdul Rohman - SPs PTK UPI",
+  "framework": "React (Vite)",
+  "language": "TypeScript",
+  "entryPoint": "src/main.tsx",
+  "web_renderer": "html5",
+  "permissions": [
+    "network"
+  ],
+  "settings": {
+    "node_version": "18",
+    "output_directory": "dist"
+  },
   "requestFramePermissions": []
 }
